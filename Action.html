@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Department - H1 Review & H2 Roadmap</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        }
+        .header {
+            background: linear-gradient(90deg, #0d6efd, #2c7be5);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .header h1 {
+            font-weight: 700;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-weight: 600;
+        }
+        .strategy-card {
+            background-color: white;
+            border: none;
+            border-radius: 0.75rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+            transition: transform 0.2s ease-in-out;
+            height: 100%;
+        }
+        .strategy-card:hover {
+            transform: translateY(-5px);
+        }
+        .strategy-card .card-header {
+            background-color: #eef2f9;
+            border-bottom: 1px solid #dee2e6;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+        .nav-pills .nav-link {
+            font-weight: 500;
+        }
+        .list-group-item {
+            border-left: 4px solid transparent;
+            margin-bottom: 0.5rem;
+            border-radius: 0.25rem !important;
+        }
+        .list-group-item strong {
+            color: #343a40;
+        }
+        .list-group-item.done {
+            border-left-color: #198754;
+        }
+        .list-group-item.todo {
+            border-left-color: #0d6efd;
+        }
+        .icon {
+            font-size: 1.5rem;
+            margin-right: 0.75rem;
+            vertical-align: middle;
+            width: 30px;
+        }
+        .icon-app { color: #fd7e14; }
+        .icon-data { color: #6f42c1; }
+        .icon-tech { color: #0dcaf0; }
+        .icon-gov { color: #d63384; }
+        .icon-cement { color: #6c757d; }
+        .icon-concrete { color: #ffc107; }
+        .icon-green { color: #198754; }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="display-5">Digital Department Performance Review</h1>
+            <p class="lead">H1 2023 Achievements & H2 2023 Strategic Roadmap</p>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+
+        <!-- Executive Summary Section -->
+        <section class="mb-5 p-4 rounded-3" style="background-color: #e9ecef;">
+            <h2 class="section-title pt-3">Executive Summary: Delivering on Our Promises</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="p-3">
+                        <i class="bi bi-check-circle-fill text-success fs-2 mb-2"></i>
+                        <h5 class="fw-bold">Strong Foundation Built</h5>
+                        <p>Established core governance and security standards, significantly reducing risk.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3">
+                        <i class="bi bi-graph-up-arrow text-primary fs-2 mb-2"></i>
+                        <h5 class="fw-bold">Business Impact Delivered</h5>
+                        <p>Launched key digital initiatives for Cement, Concrete, and Green Circularity.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                     <div class="p-3">
+                        <i class="bi bi-compass-fill text-info fs-2 mb-2"></i>
+                        <h5 class="fw-bold">Clear Path Forward</h5>
+                        <p>Our H2 plan focuses on closing critical gaps and accelerating high-value projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two-Pronged Strategy Section -->
+        <div class="row">
+            <!-- Strategy 1: Foundational Architecture -->
+            <div class="col-lg-6 mb-4">
+                <div class="strategy-card">
+                    <div class="card-header text-center">
+                        <i class="bi bi-shield-shaded"></i> Strategy 1: Establish a Strong Foundational Architecture
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-muted text-center">Our "investment in the engine" to build a secure, resilient, and efficient platform for the Group.</p>
+                        <!-- Tabs for H1 and H2 -->
+                        <ul class="nav nav-pills nav-fill mb-3" id="pills-tab-1" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-h1-s1-tab" data-bs-toggle="pill" data-bs-target="#pills-h1-s1" type="button" role="tab">H1 Achievements (Done)</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-h2-s1-tab" data-bs-toggle="pill" data-bs-target="#pills-h2-s1" type="button" role="tab">H2 Roadmap (To-Do)</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent-1">
+                            <div class="tab-pane fade show active" id="pills-h1-s1" role="tabpanel">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item done"><i class="bi bi-app-indicator icon icon-app"></i><strong>Application:</strong> Guideline &amp; Standard, App Portfolio Visibility</li>
+                                    <li class="list-group-item done"><i class="bi bi-database-fill-gear icon icon-data"></i><strong>Data:</strong> PDPA Program (DPO, Training, Health Check, Drills)</li>
+                                    <li class="list-group-item done"><i class="bi bi-hdd-network-fill icon icon-tech"></i><strong>Technology:</strong> Set up Core Technology Standards</li>
+                                    <li class="list-group-item done"><i class="bi bi-shield-check icon icon-gov"></i><strong>Governance:</strong> Awareness Campaign, Software Piracy Cleansing</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="pills-h2-s1" role="tabpanel">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item todo"><i class="bi bi-app-indicator icon icon-app"></i><strong>Application:</strong> VA Scan &amp; Remediate Gaps</li>
+                                    <li class="list-group-item todo"><i class="bi bi-database-fill-gear icon icon-data"></i><strong>Data:</strong> Implement Data Masking for non-production</li>
+                                    <li class="list-group-item todo"><i class="bi bi-hdd-network-fill icon icon-tech"></i><strong>Technology:</strong> WAN Improvement for Cement Plants</li>
+                                    <li class="list-group-item todo"><i class="bi bi-shield-check icon icon-gov"></i><strong>Governance:</strong> PC Lifecycle Management, SW Inventory Tool</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Strategy 2: Business Initiatives -->
+            <div class="col-lg-6 mb-4">
+                <div class="strategy-card">
+                    <div class="card-header text-center">
+                        <i class="bi bi-rocket-takeoff-fill"></i> Strategy 2: Drive Business Value &amp; Competitive Edge
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-muted text-center">"How we win the race" by leveraging our digital capabilities to achieve strategic business goals.</p>
+                        <!-- Tabs for H1 and H2 -->
+                        <ul class="nav nav-pills nav-fill mb-3" id="pills-tab-2" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-h1-s2-tab" data-bs-toggle="pill" data-bs-target="#pills-h1-s2" type="button" role="tab">H1 Achievements (Done)</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-h2-s2-tab" data-bs-toggle="pill" data-bs-target="#pills-h2-s2" type="button" role="tab">H2 Roadmap (To-Do)</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent-2">
+                            <div class="tab-pane fade show active" id="pills-h1-s2" role="tabpanel">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item done"><i class="bi bi-buildings icon icon-cement"></i><strong>Cement:</strong> Provide Data Sets for Digital Transformation</li>
+                                    <li class="list-group-item done"><i class="bi bi-box-seam icon icon-concrete"></i><strong>Concrete:</strong> Cloud Migration (Presale, Product) &amp; ML for Strength Prediction</li>
+                                    <li class="list-group-item done"><i class="bi bi-recycle icon icon-green"></i><strong>Green Circularity:</strong> Waste Management Platform Launch</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="pills-h2-s2" role="tabpanel">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item todo"><i class="bi bi-buildings icon icon-cement"></i><strong>Cement:</strong> Migrate legacy CDAS System</li>
+                                    <li class="list-group-item todo"><i class="bi bi-box-seam icon icon-concrete"></i><strong>Concrete:</strong> Continue Plant Module Cloud Migration</li>
+                                    <li class="list-group-item todo"><i class="bi bi-recycle icon icon-green"></i><strong>Green Circularity:</strong> Launch RDF Platform in Indonesia</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Conclusion Section -->
+        <section class="my-5 text-center">
+            <h2 class="section-title">A Clear Vision, A Proven Strategy</h2>
+            <p class="lead col-lg-8 mx-auto">Our H1 success proves our two-pronged strategy is working. The foundational work is directly enabling our ability to innovate and deliver competitive business solutions faster and more securely. We are aligned and executing with a clear, targeted plan for H2.</p>
+        </section>
+    </div>
+
+    <footer class="text-center py-3 bg-dark text-white">
+        <p class="mb-0">&copy; 2023 [Your Conglomerate Name] - Digital Department</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

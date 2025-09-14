@@ -1,0 +1,108 @@
+body {
+    font-family: 'Sarabun', sans-serif; /* หรือฟอนต์ไทยอื่นๆ ที่คุณต้องการ */
+}
+
+.hero-section {
+    /* สามารถเพิ่มสไตล์เพิ่มเติมสำหรับ Hero Section ได้ที่นี่ */
+    /* เช่น ปรับสีตัวอักษร, เพิ่ม overlay */
+}
+
+.strategy-card .card-title {
+    /* สามารถปรับสไตล์หัวข้อของการ์ดกลยุทธ์ */
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #0d6efd; /* Primary color */
+    bottom: 0;
+    left: calc(50% - 30px);
+}
+
+/* ปรับสไตล์ Navbar เพิ่มเติมได้ตามต้องการ */
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+    font-weight: bold;
+    color: #0d6efd; /* Primary color */
+}
+
+.page-header h1 {
+    color: #343a40; /* Darker text for header */
+}
+
+/* สไตล์เพิ่มเติมสำหรับ Roadmap Accordion หรือ Cards */
+.accordion-button:not(.collapsed) {
+    color: #0c63e4;
+    background-color: #e7f1ff;
+}
+
+/* --- Custom Timeline for "How" Section --- */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 4px;
+    background: #e9ecef;
+    border-radius: 2px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 60px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    background: #0d6efd;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    border: 3px solid white;
+    box-shadow: 0 0 0 4px #0d6efd;
+    z-index: 1;
+}
+
+.timeline-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.timeline-content h5 {
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+/* --- Smooth Scrolling --- */
+html {
+    scroll-behavior: smooth;
+}
