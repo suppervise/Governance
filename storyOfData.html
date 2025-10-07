@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation: The Ultimate Food Court</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Animate On Scroll Library (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://dsignsomething.com/wp-content/uploads/2021/10/187412875_2182317825232870_6904367779836693606_n.jpeg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-weight: 700;
+            font-size: 3.5rem;
+        }
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .text-success { color: #198754 !important; }
+        .text-danger { color: #dc3545 !important; }
+        .bg-light-yellow { background-color: #fff9e6; }
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+            width: 4px;
+            background-color: #0d6efd;
+            border-radius: 2px;
+        }
+        .timeline-item {
+            padding: 20px 40px;
+            position: relative;
+            width: 50%;
+        }
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            padding-right: 60px;
+            text-align: right;
+        }
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            padding-left: 60px;
+            text-align: left;
+        }
+        .timeline-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #0d6efd;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            border: 4px solid #f8f9fa;
+        }
+        .timeline-item:nth-child(odd) .timeline-icon {
+            right: -25px;
+        }
+        .timeline-item:nth-child(even) .timeline-icon {
+            left: -25px;
+        }
+        .benefit-card {
+            background-color: #fff;
+            border-left: 5px solid #0d6efd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero" data-aos="fade-in" data-aos-duration="1000">
+        <div class="container">
+            <h1 class="display-4">From a Chaotic Kitchen to a Smart Food Court</h1>
+            <p class="lead">A Strategy to Transform "Spaghetti" Data into Valuable Products</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        
+        <!-- The Problem Section -->
+        <section class="mb-5 py-5">
+            <h2 class="section-title" data-aos="fade-up">What Does Our "Data Kitchen" Look Like Today?</h2>
+            <p class="text-center lead text-muted mb-5" data-aos="fade-up" data-aos-delay="100"> we're facing what's known as "spaghetti pipelines."</p>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-duration="800">
+                    <div class="card h-100 p-4 text-center border-danger border-2">
+                        <div class="card-body">
+                            <i class="fas fa-random card-icon text-danger"></i>
+                            <h3 class="card-title fw-bold">Everyone Builds Their Own Kitchen</h3>
+                            <p class="card-text">Each team builds its own data silo pipeline to cook 'fast food' dishes. The result is...</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-times text-danger me-2"></i><strong>Redundant:</strong> Dozens of small kitchens making similar meals.</li>
+                                <li><i class="fas fa-times text-danger me-2"></i><strong>Inconsistent:</strong> The recipe for "customer" is different in every kitchen.</li>
+                                <li><i class="fas fa-times text-danger me-2"></i><strong>Wasteful:</strong> The same ingredients (data) are bought repeatedly and spoil.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-duration="800">
+                    <div class="card h-100 p-4 text-center border-primary border-2">
+                        <div class="card-body">
+                            <i class="fas fa-concierge-bell card-icon text-primary"></i>
+                            <h3 class="card-title fw-bold">Or, We Have a Single "Central Kitchen"</h3>
+                            <p class="card-text">All teams send their 'orders' to a single, central data team—the traditional approach. The result is...</p>
+                             <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-success me-2"></i><strong>Standardized:</strong> Every dish uses the same recipe.</li>
+                                <li><i class="fas fa-times text-danger me-2"></i><strong>Bottlenecked:</strong> A long waiting line to get your food.</li>
+                                <li><i class="fas fa-times text-danger me-2"></i><strong>Doesn't Meet Needs:</strong> The chef doesn't understand the customer's taste.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Solution: Food Court Model -->
+        <section class="my-5 py-5 bg-light-yellow rounded" data-aos="zoom-in" data-aos-duration="800">
+            <div class="container">
+                <h2 class="section-title">The Solution: Build the Ultimate Food Court</h2>
+                <p class="text-center lead mb-5">We will blend the "discipline" of an Enterprise Architect  with the "creativity" of chefs (Data Analytic Teams).</p>
+                
+                <div class="timeline">
+                    <!-- Step 1: The Food Court Manager (TOGAF) -->
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-icon"><i class="fas fa-building"></i></div>
+                        <h4 class="fw-bold">1. The <a href="dataocean.html">food Court Manager </a><span class="text-center lead text-muted mb-5" >(Data preperation)</span></h4>
+                        <p>We don't cook the food; we build the best "venue" and "ingredients."</p>
+                        <ul class="list-unstyled">
+                           <li><i class="fas fa-check-circle text-primary me-2"></i><strong>Build the Infrastructure:</strong> Provide top-tier utilities like water, power, and gas (the Data Platform).</li>
+                           <li><i class="fas fa-check-circle text-primary me-2"></i><strong>Set Health & Safety Codes:</strong> Define standards for cleanliness and quality (Data Governance & Quality).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Step 2: The Restaurant Owners (Data Teams) -->
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-icon"><i class="fas fa-utensils"></i></div>
+                        <h4 class="fw-bold">2. The Restaurant Owners <span class="text-center lead text-muted mb-5" >(The Role of Data analytic/analyst Teams)</span></h4>
+                        <p>Each domain team becomes a "chef," specializing in their own cuisine.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i><strong>Create Signature Dishes:</strong> Build high-quality "Data Products," like a "360 Customer View" dish.</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i><strong>Responsible for Quality:</strong> Ensure their ingredients are fresh and the taste is consistent.</li>
+                        </ul>
+                    </div>
+
+                     <!-- Step 3: Connecting to the Article -->
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-icon"><i class="fas fa-book-open"></i></div>
+                        <h4 class="fw-bold">3. Client <span class="text-center lead text-muted mb-5" >(BU data consumer)</span> </h4>
+                        <p>How do customers receive their dishes?</p>
+                        <p class="mb-1"><strong>ordering ingradient cooking by themselves </strong><br>ad-hoc,tailor maid</p>
+                        <p class="mb-1"><strong>ordering from the Restaurant cuisine menu </strong><br>ready-to-serve product that can immediately consume..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="my-5">
+            <h2 class="section-title" data-aos="fade-up">The Results of Building This "Food Court"</h2>
+       
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card benefit-card h-100 p-4 text-center">
+                        
+                        <h5 class="fw-bold">Less Time to Market for New Use Cases</h5>
+                        <p>Like opening a new restaurant in a fully equipped food court instead of building from scratch.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card benefit-card h-100 p-4 text-center">
+                        
+                        <h5 class="fw-bold">Lower Total Cost of Ownership (TCO)</h5>
+                        <p>No more redundant kitchens, and ingredients (data) are shared efficiently.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card benefit-card h-100 p-4 text-center">
+                        <i class="fas fa-infinity fa-3x text-primary mb-3"></i>
+                        <h5 class="fw-bold">Enables New Business Opportunities</h5>
+                        <p>With a menu of quality data products, we can create new services we never could before.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4">
+        <div class="container">
+            <p class="mb-0 h5">It's time to transform our "chaotic kitchen" into a "smart food court" that drives sustainable growth.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({ once: true });
+    </script>
+
+</body>
+</html>

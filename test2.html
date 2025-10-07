@@ -1,226 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Department - H1 Review & H2 Roadmap</title>
-
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-    <style>
-        /* Custom Styles for a Premium Presentation Feel */
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            background-color: #f4f7f6;
-            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-        }
-        .navbar-brand {
-            font-weight: 600;
-        }
-        .page-section {
-            min-height: 100vh;
-            padding: 80px 0; /* 60px for navbar + 20px padding */
-            border-bottom: 1px solid #dee2e6;
-        }
-        .page-title {
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-        .strategy-intro {
-            background-color: #e9ecef;
-            border-radius: 0.5rem;
-            padding: 2rem;
-            margin-bottom: 2rem;
-        }
-        .content-card {
-            background-color: #ffffff;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            padding: 1.5rem;
-            margin-top: 1.5rem;
-        }
-        .list-group-item {
-            border: 0;
-            padding: 0.75rem 0;
-            display: flex;
-            align-items: flex-start;
-        }
-        .list-group-item strong {
-            color: #212529;
-            flex-shrink: 0; /* Prevents pillar name from wrapping */
-            width: 120px; /* Aligns descriptions */
-        }
-        .list-group-item-h1 {
-            border-left: 4px solid #198754; /* Green for Done */
-            padding-left: 1rem;
-        }
-        .list-group-item-h2 {
-            border-left: 4px solid #0d6efd; /* Blue for To-Do */
-            padding-left: 1rem;
-        }
-        .icon {
-            font-size: 1.25rem;
-            margin-right: 1rem;
-            vertical-align: top;
-            width: 25px; /* Align icons */
-        }
-        .btn-reveal {
-            font-weight: 500;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IT Action Plan - North Star Transformation</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+      line-height: 1.8;
+      color: #333;
+      background: #f9f9f9;
+    }
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    h1, h2, h3 {
+      color: #005a9c;
+    }
+    h1 {
+      border-bottom: 2px solid #005a9c;
+      padding-bottom: 8px;
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-top: 40px;
+      border-left: 4px solid #005a9c;
+      padding-left: 10px;
+    }
+    h3 {
+      font-size: 1.2em;
+      color: #004070;
+      margin-top: 30px;
+    }
+    section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    ul {
+      list-style-type: '✓  ';
+      margin: 10px 0 10px 20px;
+      padding-left: 10px;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    p {
+        color: #555;
+    }
+    strong {
+        color: #004070;
+    }
+    .phase-label {
+        font-weight: bold;
+        background-color: #e7f3ff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+  </style>
 </head>
 <body>
+<div class="container">
+  <h1>IT Action Plan</h1>
 
-    <!-- ============================================ -->
-    <!-- Navigation Bar -->
-    <!-- ============================================ -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="#"><i class="bi bi-shield-check"></i> Digital Department Roadmap</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#strategy1">Strategy 1: Foundation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#strategy2">Strategy 2: Business Value</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <section>
+    <h2>A) Business-Led Key Initiatives</h2>
+    <p>This group of initiatives is focused on directly supporting and responding to the needs of business units to enhance competitive capabilities and drive growth in alignment with corporate objectives.</p>
 
-    <!-- ============================================ -->
-    <!-- PAGE 1: STRATEGY 1 -->
-    <!-- ============================================ -->
-    <section id="strategy1" class="page-section">
-        <div class="container">
-            <h1 class="page-title text-center">Strategy 1: Establish a Strong Foundational Architecture</h1>
-            <p class="lead text-center text-muted mb-5">Building a secure, resilient, and efficient platform for the entire Group.</p>
+    <h3>1. Existing Business Capability Enhancement</h3>
+    <p>Initiatives started prior to the North Star program to address ongoing business needs and enhance operational capabilities. These must continue to ensure business continuity.</p>
+    <ul>
+      <li>Enhance existing ERP/CRM systems to support more complex operations.</li>
+      <li>Maintain and support legacy applications critical to business operations.</li>
+      <li>Support specialized projects for individual business units as previously planned.</li>
+    </ul>
+    <p><strong>Goal:</strong> To maintain business continuity and maximize the efficiency of daily operations.</p>
 
-            <!-- Introduction: Need, Benefit, Purpose -->
-            <div class="strategy-intro">
-                <h4 class="fw-bold">The "Why" Behind Our Foundation</h4>
-                <div class="row">
-                    <div class="col-md-4"><strong>Need:</strong> To manage rising complexity, cybersecurity threats, and regulatory demands (like PDPA) in a standardized way.</div>
-                    <div class="col-md-4"><strong>Benefit:</strong> Reduced operational risk, lower costs through standardization, improved security posture, and faster delivery of future projects.</div>
-                    <div class="col-md-4"><strong>Purpose:</strong> To create a reliable "digital engine" that enables the entire Group to operate safely and efficiently.</div>
-                </div>
-            </div>
+    <h3>2. North Star Transformation Support Plan</h3>
+    <p>A plan specifically designed to successfully support the organizational transformation under the North Star program.</p>
 
-            <!-- H1 Achievements -->
-            <div class="content-card">
-                <h3 class="fw-bold text-success">H1 Achievements (What We've Done)</h3>
-                <ul class="list-group list-group-flush mt-3">
-                    <li class="list-group-item list-group-item-h1"><i class="bi bi-app-indicator icon"></i><strong>Application:</strong> Established Guidelines & Standards; Achieved Application Portfolio Visibility.</li>
-                    <li class="list-group-item list-group-item-h1"><i class="bi bi-database-fill-gear icon"></i><strong>Data:</strong> Rolled out PDPA Program: กำหนด standard เอกสารที่เกี่ยวข้อง, กำหนด DPO แต่ละบริษัท, Training กฎหมาย PDPA, Workshop PDP Health Check, PDP Drill Test (Data Leak & Ransomware).</li>
-                    <li class="list-group-item list-group-item-h1"><i class="bi bi-hdd-network-fill icon"></i><strong>Technology:</strong>
-                        <div class="ms-2">
-                            - <strong>Infra:</strong> Segmented standards by business size; Test health check at ToongSong Plant.<br>
-                            - <strong>Cloud:</strong> Set up foundational cloud standards.<br>
-                            - <strong>AI:</strong> Established a "Do, Don't" policy to guide responsible AI adoption.
-                        </div>
-                    </li>
-                    <li class="list-group-item list-group-item-h1"><i class="bi bi-shield-check icon"></i><strong>Governance:</strong> Group-wide Awareness & Communication campaign; Software piracy cleansing initiative.</li>
-                </ul>
-            </div>
-            
-            <!-- H2 Reveal Button -->
-            <div class="text-center my-4">
-                <button class="btn btn-primary btn-lg btn-reveal" type="button" data-bs-toggle="collapse" data-bs-target="#h2-strategy1-content" aria-expanded="false" aria-controls="h2-strategy1-content">
-                    <i class="bi bi-arrow-down-circle"></i> Click to Show H2 Roadmap
-                </button>
-            </div>
+    <div class="phase-label">Phase 1: Design & Preparation (Present - End of 2025)</div>
+    <ul>
+        <li><strong>Co-design 'To-Be' Processes:</strong> Work closely with business teams to provide technical consultation on technology capabilities and constraints.</li>
+        <li><strong>Analyze & Design IT Architecture:</strong> Conduct a Gap Analysis of current systems and design the Target Architecture to support new processes.</li>
+        <li><strong>Plan System Changes:</strong> Create a roadmap for upgrading, developing, or procuring necessary systems, with a primary focus on Order Fulfillment and Data Integration.</li>
+    </ul>
+     <p><strong>Goal:</strong> To deliver a complete and approved Process & IT blueprint, ready for execution in 2026.</p>
 
-            <!-- H2 Roadmap (Initially Hidden) -->
-            <div class="collapse" id="h2-strategy1-content">
-                <div class="content-card">
-                    <h3 class="fw-bold text-primary">H2 Roadmap (What's Next)</h3>
-                    <ul class="list-group list-group-flush mt-3">
-                        <li class="list-group-item list-group-item-h2"><i class="bi bi-app-indicator icon"></i><strong>Application:</strong> Conduct comprehensive VA Scan and remediate all critical gaps.</li>
-                        <li class="list-group-item list-group-item-h2"><i class="bi bi-database-fill-gear icon"></i><strong>Data:</strong> Enhance Data Ocean to comply with Data Governance (e.g., Data Masking, Data Classification).</li>
-                        <li class="list-group-item list-group-item-h2"><i class="bi bi-hdd-network-fill icon"></i><strong>Technology:</strong>
-                            <div class="ms-2">
-                               - <strong>Infra:</strong> WAN-to-WAN improvement project for Cement plants.<br>
-                               - <strong>Cloud:</strong> Gain full visibility and implement multi-cloud optimization strategies.<br>
-                               - <strong>AI:</strong> Conduct hands-on workshops to increase AI adoption and capability.
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-h2"><i class="bi bi-shield-check icon"></i><strong>Governance:</strong> Implement full PC Lifecycle Management and a centralized Software Inventory tool.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="phase-label">Phase 2: Execution & Transformation (January 2026 onwards)</div>
+    <ul>
+        <li><strong>Implementation:</strong> Launch the new IT organizational structure and begin system development projects according to the approved plan.</li>
+        <li><strong>Change Management:</strong> Communicate and train users to ensure a smooth adoption of new processes and tools.</li>
+        <li><strong>Performance Monitoring:</strong> Track results against defined KPIs and gather feedback for continuous improvement.</li>
+    </ul>
+    <p><strong>Goal:</strong> To successfully implement new systems and processes, measure business impact, and drive continuous improvement.</p>
+  </section>
 
-    <!-- ============================================ -->
-    <!-- PAGE 2: STRATEGY 2 -->
-    <!-- ============================================ -->
-    <section id="strategy2" class="page-section bg-white">
-        <div class="container">
-            <h1 class="page-title text-center">Strategy 2: Drive Business Value with Digital Initiatives</h1>
-            <p class="lead text-center text-muted mb-5">Leveraging our digital capabilities to achieve strategic objectives and create a competitive edge.</p>
+  <section>
+    <h2>B) IT-Led Key Initiatives</h2>
+    <p>Initiatives driven by the IT department to build a strong, efficient, and secure technology foundation that supports long-term business growth.</p>
 
-            <!-- Introduction: Need, Benefit, Purpose -->
-            <div class="strategy-intro">
-                <h4 class="fw-bold">The "Why" Behind Our Initiatives</h4>
-                <div class="row">
-                    <div class="col-md-4"><strong>Need:</strong> To respond to market demands, improve operational efficiency, and unlock new revenue streams for our diverse business units.</div>
-                    <div class="col-md-4"><strong>Benefit:</strong> Increased revenue, improved margins, better customer experience, data-driven decision-making, and sustainable growth.</div>
-                    <div class="col-md-4"><strong>Purpose:</strong> To be a proactive strategic partner, co-creating digital solutions that help our businesses win in their respective markets.</div>
-                </div>
-            </div>
+    <h3>1. Best Practices for Governance & Security</h3>
+    <p>To ensure all digital platforms are highly available, secure, and perform optimally.</p>
+    <ul>
+        <li><strong>Establish Security Policies:</strong> Develop and enforce a comprehensive cybersecurity policy across all systems to protect corporate data.</li>
+        <li><strong>Form an Architecture Review Board (ARB):</strong> To ensure all new IT projects align with the enterprise architecture, avoiding redundancy and technical debt.</li>
+        <li><strong>Plan for Incident Response & Disaster Recovery:</strong> Prepare and test plans to ensure rapid recovery of critical systems in case of disruption.</li>
+    </ul>
+    <p><strong>Goal:</strong> To build business confidence by ensuring the highest levels of IT stability and security.</p>
 
-            <!-- H1 Achievements -->
-            <div class="content-card">
-                <h3 class="fw-bold text-success">H1 Achievements (What We've Delivered)</h3>
-                <ul class="list-group list-group-flush mt-3">
-                    <li class="list-group-item list-group-item-h1"><i class="bi bi-buildings icon"></i><strong>Cement:</strong> Provided foundational Data Set for their digital transformation.</li>
-                    <li class="list-group-item list-group-item-h1"><i class="bi bi-box-seam icon"></i><strong>Concrete:</strong> Cloud Migration (Presale, Product, e-Business, e-Maintenance); ML for Strength Prediction.</li>
-                    <li class="list-group-item list-group-item-h1"><i class="bi bi-recycle icon"></i><strong>Green Circularity:</strong> Delivered Waste Management Data platform.</li>
-                    <li class="list-group-item list-group-item-h1"><i class="bi bi-shop icon"></i><strong>Regional Business:</strong> Launched e-Purchasing & K-Concrete platform.</li>
-                    <li class="list-group-item list-group-item-h1"><i class="bi bi-grid-3x3-gap-fill icon"></i><strong>CGS Group:</strong> Deployed Justperform for domestic, ESG Platform, and AI Projects (Kitcarbon, Risk Insight, Legal Eye).</li>
-                </ul>
-            </div>
+    <h3>2. Optimization of Resources</h3>
+    <p>Following the consolidation of IT units, there is a significant opportunity to reduce cost redundancies and improve service delivery efficiency to business units.</p>
+    <ul>
+        <li><strong>Application Portfolio Management:</strong> Survey and assess all applications to decide whether to retire, retain, or revamp them, aiming to reduce redundant license and maintenance costs.</li>
+        <li><strong>Infrastructure Optimization:</strong> Consolidate scattered servers, storage systems, and networks to reduce energy and maintenance expenses.</li>
+        <li><strong>Cloud FinOps:</strong> Analyze and optimize cloud service usage to ensure the company pays only for necessary resources and achieves maximum cost-effectiveness.</li>
+    </ul>
+    <p><strong>Goal:</strong> To reduce redundant IT costs and enhance service delivery to better support the business.</p>
 
-            <!-- H2 Reveal Button -->
-            <div class="text-center my-4">
-                 <button class="btn btn-primary btn-lg btn-reveal" type="button" data-bs-toggle="collapse" data-bs-target="#h2-strategy2-content" aria-expanded="false" aria-controls="h2-strategy2-content">
-                    <i class="bi bi-arrow-down-circle"></i> Click to Show H2 Roadmap
-                </button>
-            </div>
-
-             <!-- H2 Roadmap (Initially Hidden) -->
-             <div class="collapse" id="h2-strategy2-content">
-                <div class="content-card">
-                    <h3 class="fw-bold text-primary">H2 Roadmap (What's Coming)</h3>
-                     <ul class="list-group list-group-flush mt-3">
-                        <li class="list-group-item list-group-item-h2"><i class="bi bi-buildings icon"></i><strong>Cement:</strong> Migrate legacy CDAS database, MIS, and QIS systems.</li>
-                        <li class="list-group-item list-group-item-h2"><i class="bi bi-box-seam icon"></i><strong>Concrete:</strong> Cloud Migration for Sale & Dispatch modules; New Transportation Cost Structure.</li>
-                        <li class="list-group-item list-group-item-h2"><i class="bi bi-recycle icon"></i><strong>Green Circularity:</strong> Launch RDF Trading & Supply platform in Indonesia.</li>
-                        <li class="list-group-item list-group-item-h2"><i class="bi bi-lightning-charge icon"></i><strong>Green Industrial:</strong> Stream Providing project for Micheline Group.</li>
-                        <li class="list-group-item list-group-item-h2"><i class="bi bi-shop icon"></i><strong>Regional Business:</strong> Continue to enhance IT Management; Begin SAP Vendor Transition.</li>
-                        <li class="list-group-item list-group-item-h2"><i class="bi bi-grid-3x3-gap-fill icon"></i><strong>CGS Group:</strong> Extend Justperform scope; Customer 360 initiative; AI Standard Platform; Enhancement from North Star project.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="text-center py-3 bg-dark text-white">
-        <p class="mb-0">© 2023 [Your Conglomerate Name] - Digital Department</p>
-    </footer>
-
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </section>
+</div>
 </body>
 </html>

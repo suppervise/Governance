@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Data Journey: From Chaotic Kitchens to a Gourmet Experience</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Animate On Scroll Library (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1600565193348-f74d3c2723a4?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-weight: 700;
+            font-size: 3.5rem;
+        }
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px
+ 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .bg-light-blue { background-color: #eef7ff; }
+        .benefit-card {
+            background-color: #fff;
+            border-left: 5px solid #198754;
+        }
+        .pain-card {
+            border-left: 5px solid #dc3545;
+        }
+        .future-card {
+             border-left: 5px solid #6f42c1;
+        }
+        .text-purple { color: #6f42c1; }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero" data-aos="fade-in" data-aos-duration="1000">
+        <div class="container">
+            <h1 class="display-4">Our Data Journey</h1>
+            <p class="lead">From Chaotic Kitchens to a Gourmet Experience</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        
+        <!-- The Past: Pain Points -->
+        <section class="py-5">
+            <h2 class="section-title" data-aos="fade-up">The Past: A Tale of Many Chaotic Kitchens</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card pain-card p-4 text-center">
+                        <i class="fas fa-silo card-icon text-danger"></i>
+                        <h4 class="fw-bold">Siloed Ingredients</h4>
+                        <p>Each team had its own small, locked pantry. Data from SAP, Blunet, and Operations couldn't be mixed, leading to an incomplete picture.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card pain-card p-4 text-center">
+                        <i class="fas fa-copy card-icon text-danger"></i>
+                        <h4 class="fw-bold">Redundant Work</h4>
+                        <p>Every team had to wash, chop, and prep the same ingredients (data cleansing and transformation) over and over, wasting valuable time.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card pain-card p-4 text-center">
+                        <i class="fas fa-hourglass-half card-icon text-danger"></i>
+                        <h4 class="fw-bold">Slow Service</h4>
+                        <p>When business needed a new "dish" (report), it took weeks or months to get the ingredients and cook it, by which time the opportunity was lost.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Present: The Data Ocean Smart Kitchen -->
+        <section class="my-5 py-5 bg-light-blue rounded" data-aos="zoom-in" data-aos-duration="800">
+            <div class="container">
+                <h2 class="section-title">The Present: Our "Data Ocean" Smart Kitchen</h2>
+                <p class="text-center lead mb-5">We built a centralized, state-of-the-art kitchen that serves everyone efficiently, systematically, and safely.</p>
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card p-3">
+                            <i class="fas fa-truck-loading card-icon text-primary"></i>
+                            <h5 class="fw-bold">Fresh Ingredient Sourcing</h5>
+                            <p>Data Ocean automatically connects to all our sources (SAP, Blunet, etc.) to bring in fresh, diverse data ingredients 24/7.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card p-3">
+                            <i class="fas fa-blender card-icon text-primary"></i>
+                            <h5 class="fw-bold">The Ultimate Prep Station</h5>
+                            <p>Automated pipelines handle the hard work: cleansing, transforming, and preparing the data so it's ready to use.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card p-3">
+                            <i class="fas fa-tags card-icon text-primary"></i>
+                            <h5 class="fw-bold">A Perfectly Labeled Pantry</h5>
+                            <p>Our Data Catalog ensures every dataset is accessible, traceable, and reusable. No more guessing what's inside.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card p-3">
+                            <i class="fas fa-shield-alt card-icon text-primary"></i>
+                            <h5 class="fw-bold">Health & Safety Guaranteed</h5>
+                            <p>Full governance and PDPA compliance are built-in, ensuring every dish is served safely and securely.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Capability: Self-Service Cooking -->
+        <section class="py-5">
+             <h2 class="section-title" data-aos="fade-up">Today's Capability: Empowering Our Chefs</h2>
+             <p class="text-center lead mb-5">We've moved from cooking *for* our business units to giving them the tools to cook for themselves.</p>
+             <div class="row align-items-center">
+                 <div class="col-md-5 text-center" data-aos="fade-right">
+                     <i class="fas fa-seedling" style="font-size: 8rem; color: #198754;"></i>
+                     <h3 class="mt-3 fw-bold">We Provide...</h3>
+                     <p class="text-muted">An endless supply of high-quality, prepped raw ingredients from the Data Ocean pantry.</p>
+                 </div>
+                 <div class="col-md-2 text-center" data-aos="zoom-in">
+                     <i class="fas fa-arrow-right fa-3x d-none d-md-block"></i>
+                     <i class="fas fa-arrow-down fa-3x d-block d-md-none"></i>
+                 </div>
+                 <div class="col-md-5 text-center" data-aos="fade-left">
+                     <i class="fas fa-chart-pie" style="font-size: 8rem; color: #0d6efd;"></i>
+                     <h3 class="mt-3 fw-bold">You Create...</h3>
+                     <p class="text-muted">Your own amazing dishes (visuals & analytics) using professional tools like Power BI, all within a secure environment.</p>
+                 </div>
+             </div>
+        </section>
+
+        <!-- The Future: Gourmet Menu -->
+        <section class="my-5 py-5">
+            <h2 class="section-title" data-aos="fade-up">The Future: A Menu of Gourmet "Data Products"</h2>
+            <p class="text-center lead mb-5">Our next step is to have our domain experts—our Michelin-star chefs—prepare signature dishes that are ready to serve instantly.</p>
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card future-card p-4">
+                        <i class="fas fa-cogs card-icon text-purple"></i>
+                        <h5 class="fw-bold">S&OP Optimization Model</h5>
+                        <p>A complex, ready-to-use model from our S&OP experts to perfect our supply chain, served instantly.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card future-card p-4">
+                        <i class="fas fa-users-cog card-icon text-purple"></i>
+                        <h5 class="fw-bold">Customer & Cost-to-Serve View</h5>
+                        <p>A 360° view of our customers, crafted by the Go-To-Market team, ready for strategic decision-making.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card future-card p-4">
+                        <i class="fas fa-user-tie card-icon text-purple"></i>
+                        <h5 class="fw-bold">Talent Management Insights</h5>
+                        <p>A ready-made analytical product from HR to identify and nurture top talent across the organization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Impact -->
+        <section class="py-5 bg-light rounded">
+             <h2 class="section-title" data-aos="fade-up">The Business Impact</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-right">
+                    <div class="card benefit-card p-4">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-rocket fa-3x text-success me-4"></i>
+                            <div>
+                                <h4 class="fw-bold">Improved Time-to-Market</h4>
+                                <p class="mb-0">By providing ready-made ingredients and gourmet dishes, we can answer business questions in days, not months, seizing opportunities faster.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4" data-aos="fade-left">
+                     <div class="card benefit-card p-4">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-recycle fa-3x text-success me-4"></i>
+                            <div>
+                                <h4 class="fw-bold">Reduced Redundancy & Cost</h4>
+                                <p class="mb-0">"Cook once, serve many." Our Data Products eliminate wasted effort, allowing our brightest minds to focus on innovation, not data prep.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4">
+        <div class="container">
+            <p class="mb-0 h5">Our journey with Data Ocean is transforming us from a collection of kitchens into a world-class culinary enterprise, ready to serve the future.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({ once: true });
+    </script>
+
+</body>
+</html>

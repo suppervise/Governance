@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation: Our Smart City, Powered by Data Ocean</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Animate On Scroll Library (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/governance/img/dataocean.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-weight: 700;
+            font-size: 3.5rem;
+        }
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        .text-success { color: #198754 !important; }
+        .text-danger { color: #dc3545 !important; }
+        .bg-light-blue { background-color: #eef7ff; }
+        .solution-section {
+            background: #ffffff;
+            padding: 60px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .nav-pills .nav-link.active {
+            background-color: #0d6efd;
+        }
+        .nav-pills .nav-link {
+            color: #0d6efd;
+        }
+        .benefit-card {
+            background-color: #fff;
+            border-left: 5px solid #0d6efd;
+        }
+        .next-step-section {
+            border-top: 1px solid #dee2e6;
+            padding-top: 40px;
+        }
+        .container img {
+    /* 1. หลักการสำคัญ: ทำให้รูปภาพไม่ใหญ่เกินความกว้างของ Element แม่ */
+    max-width: 100%; 
+    
+    /* 2. (Optional) ปรับความสูงให้เป็น auto เพื่อรักษาสัดส่วนของรูปภาพ */
+    height: auto; 
+    
+    /* 3. (Optional) ตั้งให้เป็น display: block เพื่อจัดการช่องว่างที่ไม่จำเป็น */
+    display: block; 
+}
+.container {
+    width: 100%; /* ตัวอย่าง: กำหนดความกว้างของกล่องหลัก */
+    height: 30%;
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+}
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero" data-aos="fade-in" data-aos-duration="1000">
+        <div class="container">
+            <img src="img/dataocean.png" alt="Data Ocean Logo">
+          
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        
+        <!-- The Story Section (Why we built the city) -->
+        <section class="mb-5">
+            <h2 class="section-title" data-aos="fade-up">Why We Needed a New Blueprint</h2>
+            <p class="text-center text-muted mb-5">To avoid the conflict between stability and speed, we chose to blend the best of both worlds.</p>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-duration="800">
+                    <div class="card h-100 p-4 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-drafting-compass card-icon text-primary"></i>
+                            <h3 class="card-title fw-bold">The Old Way: Stability</h3>
+                            <p class="card-text">Centralized, orderly, and secure, but often slow and inflexible to business needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-duration="800">
+                    <div class="card h-100 p-4 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-rocket card-icon text-warning"></i>
+                            <h3 class="card-title fw-bold">The Agile Way: Speed</h3>
+                            <p class="card-text">Fast and innovative, but could lead to chaos, duplication, and inconsistent data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Solution: Data Ocean Platform -->
+        <section class="my-5 py-5 bg-light-blue rounded" data-aos="zoom-in" data-aos-duration="800">
+            <div class="container">
+                <h2 class="section-title">Our Solution: The 'Data Ocean' Platform</h2>
+                <p class="text-center lead mb-5">We have built the Kitchen's infrastructure. It's robust, secure, and ready to empower everyone.</p>
+                
+                <div class="solution-section">
+                    <ul class="nav nav-pills nav-fill justify-content-center mb-4" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-foundation-tab" data-bs-toggle="pill" data-bs-target="#pills-foundation" type="button" role="tab" aria-controls="pills-foundation" aria-selected="true">
+                                <i class="fas fa-cogs me-2"></i> The Kitchen Foundation
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-governance-tab" data-bs-toggle="pill" data-bs-target="#pills-governance" type="button" role="tab" aria-controls="pills-governance" aria-selected="false">
+                                <i class="fas fa-gavel me-2"></i> Laws & Services
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-enablement-tab" data-bs-toggle="pill" data-bs-target="#pills-enablement" type="button" role="tab" aria-controls="pills-enablement" aria-selected="false">
+                                <i class="fas fa-users me-2"></i> Client Enablement
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content p-3" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-foundation" role="tabpanel" aria-labelledby="pills-foundation-tab">
+                            <h4 class="fw-bold text-center mb-4">Core Infrastructure for Power and Connectivity</h4>
+                            <div class="row text-center">
+                                <div class="col-md-3"><h5><i class="fas fa-database text-info"></i> All Data Sources</h5><p>Connects to any data, anywhere.</p></div>
+                                <div class="col-md-3"><h5><i class="fas fa-sitemap text-info"></i> Automated Pipelines</h5><p>Reliable data flow powered by Synapse.</p></div>
+                                <div class="col-md-3"><h5><i class="fas fa-code-branch text-info"></i> API Access</h5><p>Standardized access for all applications.</p></div>
+                                <div class="col-md-3"><h5><i class="fas fa-book-open text-info"></i> Data Catalog</h5><p>A "Google Maps" for all our data assets.</p></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-governance" role="tabpanel" aria-labelledby="pills-governance-tab">
+                             <h4 class="fw-bold text-center mb-4">A Framework for Trust, Security, and Compliance</h4>
+                             <div class="row text-center">
+                                <div class="col-md-3"><h5><i class="fas fa-user-check text-success"></i> Approval Workflow</h5><p>Ensures data is reviewed and validated.</p></div>
+                                <div class="col-md-3"><h5><i class="fas fa-user-tie text-success"></i> Data Ownership</h5><p>Clear accountability for every data asset.</p></div>
+                                <div class="col-md-3"><h5><i class="fas fa-shield-alt text-success"></i> PDPA Ready</h5><p>Built-in privacy and data protection.</p></div>
+                                <div class="col-md-3"><h5><i class="fas fa-history text-success"></i> Lifecycle & Logs</h5><p>Full audit trail and data management.</p></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-enablement" role="tabpanel" aria-labelledby="pills-enablement-tab">
+                            <h4 class="fw-bold text-center mb-4">Tools and Training for Every Citizen</h4>
+                             <div class="row text-center">
+                                <div class="col-md-4"><h5><i class="fas fa-chalkboard-teacher text-warning"></i> Data Literacy</h5><p>Ongoing training to upskill our people.</p></div>
+                                <div class="col-md-4"><h5><i class="fas fa-chart-pie text-warning"></i> Power BI Ready</h5><p>Modern tools for powerful visualizations.</p></div>
+                                <div class="col-md-4"><h5><i class="fas fa-fire-extinguisher text-warning"></i> Security Drills</h5><p>Regular testing to ensure our defenses are strong.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="my-5">
+            <h2 class="section-title" data-aos="fade-up">How 'Data Ocean' Delivers Value</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card benefit-card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-tachometer-alt fa-2x text-primary me-3"></i><h4 class="fw-bold mb-0">Accelerated Innovation</h4>
+                        </div>
+                        <p>Teams can build new solutions in days, not months, because the foundation is already there.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card benefit-card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-lock fa-2x text-primary me-3"></i><h4 class="fw-bold mb-0">Reduced Risk</h4>
+                        </div>
+                        <p>Centralized governance, security, and PDPA compliance are built-in, not an afterthought.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card benefit-card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-recycle fa-2x text-primary me-3"></i><h4 class="fw-bold mb-0">Lower Total Cost</h4>
+                        </div>
+                        <p>Create a Data Product once and reuse it across multiple projects, eliminating redundant work.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT'S NEXT Section -->
+        <section class="my-5 next-step-section">
+             <h2 class="section-title" data-aos="fade-up">What's Next? From Infrastructure to Innovation</h2>
+             <p class="text-center text-muted mb-5">The kitchen is built. Now it's time to build the amazing things inside it. </p>
+             <div class="row align-items-center">
+                 <div class="col-lg-6" data-aos="fade-right">
+                     <div class="card bg-success text-white p-4">
+                         <h4 class="fw-bold"><i class="fas fa-check-circle me-2"></i> What We Have Built:</h4>
+                         <ul class="list-unstyled mt-3">
+                             <li><i class="fas fa-angle-right me-2"></i> A world-class, secure Data Platform.</li>
+                             <li><i class="fas fa-angle-right me-2"></i> A central catalog of our data assets.</li>
+                             <li><i class="fas fa-angle-right me-2"></i> A clear governance and security framework.</li>
+                             <li><i class="fas fa-angle-right me-2"></i> The tools and training for our people.</li>
+                         </ul>
+                     </div>
+                 </div>
+                 <div class="col-lg-6" data-aos="fade-left">
+                     <div class="card bg-primary text-white p-4">
+                        <h4 class="fw-bold"><i class="fas fa-bullseye me-2"></i> How we Can Lead the Way:</h4>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="fas fa-angle-right me-2"></i> <strong>Champion 'Data Product' thinking</strong> AI prediction, Price strategy, Customer value</li>
+                            <li><i class="fas fa-angle-right me-2"></i> <strong>Empower business units</strong> to own and create their own data products on the platform.</li>
+                            <li><i class="fas fa-angle-right me-2"></i> <strong>Focus discussions on business value</strong> that can be unlocked with this new capability.</li>
+                        </ul>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4">
+        <div class="container">
+            <p class="mb-0">The foundation is built. Let's create value on it, together.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            once: true, // Animation happens only once
+            duration: 800
+        });
+    </script>
+
+</body>
+</html>
